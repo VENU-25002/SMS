@@ -1,47 +1,83 @@
 .home-container {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0 auto;
   padding: 20px;
-  max-width: 1200px;
-  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
 }
 
 .home-header {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .home-header h1 {
   font-size: 2.5rem;
-  color: #333;
+  margin-bottom: 10px;
+  color: #007bff;
 }
 
-.home-header p {
-  font-size: 1.2rem;
-  color: #555;
-}
-
-.mission-section, .events-section, .news-section, .contact-section {
+.mission-section,
+.overview-section,
+.history-section,
+.staff-section,
+.events-section,
+.news-section,
+.contact-section {
   margin-bottom: 30px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.mission-section h2, .events-section h2, .news-section h2, .contact-section h2 {
+section h2 {
+  margin-bottom: 15px;
   font-size: 1.8rem;
   color: #007bff;
 }
 
-.mission-section p, .news-section p, .contact-section p {
+section p, ul {
   font-size: 1rem;
-  color: #333;
+  line-height: 1.5;
 }
 
-.events-section ul {
+ul {
   list-style-type: none;
   padding: 0;
 }
 
-.events-section li {
-  font-size: 1rem;
-  margin: 5px 0;
+ul li {
+  margin-bottom: 10px;
 }
+
+.contact-section p {
+  margin-bottom: 5px;
+}
+.academics-section {
+  margin-bottom: 30px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.academics-section h2 {
+  font-size: 1.8rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.academics-section p, ul {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.academics-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.academics-section ul li {
+  margin-bottom: 10px;
+}
+

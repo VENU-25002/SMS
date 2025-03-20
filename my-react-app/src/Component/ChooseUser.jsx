@@ -8,7 +8,7 @@ const ChooseUser = () => {
     <ChooseUserContainer>
       <UserSection>
         <Title>Admin</Title>
-        <Link to="/admin-signIn">
+        <Link to="/admin-login"> {/* Updated link to point to AdminLogin page */}
           <Button>Login as Admin</Button>
         </Link>
       </UserSection>
@@ -22,6 +22,12 @@ const ChooseUser = () => {
         <Title>Teacher</Title>
         <Link to="/teacher-login">
           <Button>Login as Teacher</Button>
+        </Link>
+      </UserSection>
+      <UserSection>
+        <Title>Parent</Title>
+        <Link to="/parent-login"> {/* Added link to ParentLogin page */}
+          <Button>Login as Parent</Button>
         </Link>
       </UserSection>
     </ChooseUserContainer>

@@ -1,12 +1,11 @@
 import React from 'react';
 import Navbar from './Navbar'; // Import the Navbar component
-import './Home.css'; // Make sure to add styling as needed!
+import './Home.css'; // Import the CSS for styling
 
 const Home = () => {
   return (
     <div className="home-container">
-
-<Navbar />
+      <Navbar />
 
       {/* Welcome Section */}
       <header className="home-header">
@@ -20,6 +19,55 @@ const Home = () => {
         <p>
           Empowering educators and students with tools to unlock their full potential through efficient management and collaboration.
         </p>
+      </section>
+
+      {/* Overview Section */}
+      <section className="overview-section">
+        <h2>Overview</h2>
+        <p>
+          Our school is a renowned institution dedicated to fostering academic excellence,
+          creativity, and leadership. With state-of-the-art infrastructure, experienced faculty,
+          and a commitment to holistic development, we strive to provide the best education to our students.
+        </p>
+      </section>
+
+      {/* Academics Section */}
+      <section className="academics-section">
+        <h2>Academics</h2>
+        <p>
+          We offer a comprehensive and inclusive curriculum designed to meet the needs of 21st-century learners. 
+          Our academic calendar ensures a balanced approach to learning, including examinations, holidays, and special events.
+        </p>
+        <ul>
+          <li>Curriculum: Tailored for both practical and theoretical excellence, covering core subjects and electives.</li>
+          <li>Academic Calendar: Keep track of key dates, including exams, holidays, and school events.</li>
+          <li>Departments: Specialized departments for Science, Arts, Mathematics, and Languages.</li>
+        </ul>
+      </section>
+
+      {/* History Section */}
+      <section className="history-section">
+        <h2>History</h2>
+        <p>
+          Established in 1985, our school has a rich heritage of over 40 years of excellence in education.
+          From humble beginnings with a handful of students, we have grown into a flourishing institution
+          known for its innovative teaching methods and outstanding results.
+        </p>
+      </section>
+
+      {/* Staff Section */}
+      <section className="staff-section">
+        <h2>Meet Our Staff</h2>
+        <p>
+          Our dedicated team of educators and staff members work tirelessly to create a positive
+          and nurturing learning environment for our students.
+        </p>
+        <ul>
+          <li>Principal: Dr. Anjali Sharma</li>
+          <li>Vice Principal: Mr. Rajesh Gupta</li>
+          <li>Head of Science Department: Mrs. Kavita Mehra</li>
+          <li>Head of Arts Department: Mr. Arvind Kapoor</li>
+        </ul>
       </section>
 
       {/* Upcoming Events Section */}
