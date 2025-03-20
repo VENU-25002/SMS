@@ -20,7 +20,7 @@ const ChooseUser = () => {
       </UserSection>
       <UserSection>
         <Title>Teacher</Title>
-        <Link to="/teacher-signIn">
+        <Link to="/teacher-login">
           <Button>Login as Teacher</Button>
         </Link>
       </UserSection>
