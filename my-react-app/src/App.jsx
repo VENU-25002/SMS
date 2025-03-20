@@ -1,23 +1,20 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./Component/Home"; // Import the Home component
-import StudentDashboard from "./Component/StudentDashboard"; // Import the StudentDashboard component
-import Navbar from "./Component/Navbar"; // Import the Navbar component
-import SignIn from "./Component/SignIn"; // Import the SignIn page/component
-import ChooseUser from "./Component/ChooseUser"; // Import the ChooseUser component
+import Home from "./Component/Home";
+import StudentDashboard from "./Component/StudentDashboard";
+import Navbar from "./Component/Navbar";
+import ChooseUser from "./Component/ChooseUser";
+import StudentLogin from "./Component/StudentLogin";
 
 function App() {
   return (
     <Router>
-      {/* Include Navbar */}
       
-
-      {/* Define Routes */}
       <Routes>
         <Route path="/" element={<Home />} /> {/* Route for Home */}
-        <Route path="/student-dashboard" element={<StudentDashboard />} /> {/* Route for Student Dashboard */}
-        <Route path="/signin" element={<SignIn />} /> {/* Route for Sign In */}
         <Route path="/choose-user" element={<ChooseUser />} /> {/* Route for ChooseUser */}
+        <Route path="/student-login" element={<StudentLogin />} /> {/* Route for Student Login */}
+        <Route path="/student-dashboard" element={<StudentDashboard />} /> {/* Route for Student Dashboard */}
       </Routes>
     </Router>
   );

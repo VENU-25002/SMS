@@ -3,7 +3,6 @@ import { ChooseUserContainer, UserSection, Title, Button } from '../styles/Choos
 import { Link } from 'react-router-dom';
 import './ChooseUser.css';
 
-
 const ChooseUser = () => {
   return (
     <ChooseUserContainer>
@@ -15,7 +14,7 @@ const ChooseUser = () => {
       </UserSection>
       <UserSection>
         <Title>Student</Title>
-        <Link to="/student-signIn">
+        <Link to="/student-login"> {/* Updated link to point to StudentLogin page */}
           <Button>Login as Student</Button>
         </Link>
       </UserSection>
