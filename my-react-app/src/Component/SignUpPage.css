@@ -1,0 +1,78 @@
+/* Sign-up Container */
+.signup-container {
+    background-color: #a1b7d7; /* Primary background color */
+    color: white;
+    padding: 20px;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header Styling */
+.signup-header h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Sign-up Form Styling */
+.signup-form {
+    background-color: #f9f9f9; /* Form background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Soft shadow for form */
+    width: 300px; /* Fixed width for form */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input Fields Styling */
+.signup-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Uniform font size */
+}
+
+/* Terms and Conditions Section */
+.terms-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.terms-container input {
+    margin-right: 10px; /* Space between checkbox and label */
+}
+
+/* Sign-up Button Styling */
+.signup-button {
+    padding: 10px;
+    background-color: #1e88e5; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px; /* Uniform font size */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.signup-button:hover {
+    background-color: #1565c0; /* Darker hover effect */
+}
+
+/* Login Link Styling */
+.login-link {
+    margin-top: 10px;
+}
+
+.login-link a {
+    color: #ffffff; /* Link color */
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline; /* Hover effect for link */
+}

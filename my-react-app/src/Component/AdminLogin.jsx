@@ -9,14 +9,11 @@ const AdminLogin = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
+    // Add authentication logic here (API or validation)
+    console.log('Admin Logged In:', { email, password });
 
-    // Example: Hardcoded authentication for demonstration
-    if (email === 'admin@example.com' && password === 'admin123') {
-      console.log('Admin Logged In:', { email, password });
-      navigate('/admin-dashboard'); // Navigate to admin dashboard
-    } else {
-      alert('Invalid credentials. Please try again.');
-    }
+    // Navigate to the admin dashboard after successful login
+    navigate('/admin-dashboard');
   };
 
   return (
@@ -31,7 +28,7 @@ const AdminLogin = () => {
             name="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="Enter your admin email"
+            placeholder="Enter your email"
             required
           />
         </div>

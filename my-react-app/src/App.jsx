@@ -10,6 +10,9 @@ import TeacherDashboard from "./Component/TeacherDashboard"; // Import TeacherDa
 import AdminDashboard from "./Component/AdminDashboard"; // Import AdminDashboard
 import ParentLogin from "./Component/ParentLogin"; // Import ParentLogin
 import ParentPortal from "./Component/ParentPortal"; // Import ParentPortal
+import AdminLogin from "./Component/AdminLogin"; // Import AdminLogin
+import SignUpPage from "./Component/SignUpPage"; // Import SignUpPage
+
 
 function App() {
   return (
@@ -23,10 +26,15 @@ function App() {
         <Route path="/teacher-login" element={<TeacherLogin />} /> {/* Route for Teacher Login */}
         <Route path="/teacher-dashboard" element={<TeacherDashboard />} /> {/* Route for Teacher Dashboard */}
         <Route path="/admin-dashboard" element={<AdminDashboard />} /> {/* Route for Admin Dashboard */}
+        <Route path="/admin-login" element={<AdminLogin />} />
 
         {/* New Routes for Parent Portal */}
         <Route path="/parent-login" element={<ParentLogin />} /> {/* Parent Login */}
         <Route path="/parent-portal" element={<ParentPortal />} /> {/* Parent Portal */}
+
+        {/* Additional Routes */}
+        <Route path="/signup" element={<SignUpPage />} /> {/* Route for Sign Up Page */}
+        <Route path="/home" element={<Home />} /> {/* Route for Home */}
       </Routes>
     </Router>
   );

@@ -1,25 +1,52 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Navbar.css'; // Import the CSS file
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
+import './Navbar.css'; // Import the CSS file for styling
 
-function Navbar() {
+const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false); // State for dropdown visibility
+  const navigate = useNavigate(); // Initialize navigate for programmatic navigation
+
   return (
     <nav className="navbar">
-      {/* Navigation Links */}
-      <ul className="nav-links">
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-      </ul>
+      {/* Navbar Header */}
+      <h1 className="navbar-header">School Management System</h1>
 
-      {/* Sign In Button */}
-      <Link to="/choose-user">
-        <button className="signin-button" aria-label="Sign In Button">
-          Sign In
-        </button>
-      </Link>
+      {/* Three-Bar Button */}
+      <button
+        className="three-bar-button"
+        aria-label="More Options"
+        onClick={() => setShowMenu(!showMenu)} // Toggle dropdown menu visibility
+      >
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </button>
+
+      {/* Dropdown Menu */}
+      {showMenu && (
+        <div className="dropdown-menu">
+          <button
+            className="dropdown-item"
+            onClick={() => navigate('/signup')} // Navigate to Sign Up page
+          >
+            Sign Up
+          </button>
+          <button
+            className="dropdown-item"
+            onClick={() => navigate('/choose-user')} // Navigate to Login page
+          >
+            Login
+          </button>
+          <button
+            className="dropdown-item"
+            onClick={() => alert('Help Section Coming Soon!')} // Placeholder for Help logic
+          >
+            Help
+          </button>
+        </div>
+      )}
     </nav>
   );
-}
+};
 
 export default Navbar;

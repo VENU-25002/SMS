@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar'; // Import the Navbar component
+import ChatBot from './ChatBot'; // Import the ChatBot component (kept specifically here for Home page)
 import './Home.css'; // Import the CSS for styling
 
 const Home = () => {
@@ -95,6 +96,9 @@ const Home = () => {
         <p>Phone: +91 9876543210</p>
         <p>Address: 123 School Road, New Delhi, India</p>
       </section>
+
+      {/* ChatBot Component */}
+      <ChatBot /> {/* Exclusively for the Home page */}
     </div>
   );
 };

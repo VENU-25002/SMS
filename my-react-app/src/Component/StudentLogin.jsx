@@ -1,19 +1,18 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
-import './StudentLogin.css'; // Import the CSS for styling
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'; // Import the useNavigate hook
+import './StudentLogin.css'; // Import the CSS file for styling
 
 const StudentLogin = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const navigate = useNavigate(); // Initialize useNavigate
+  const [email, setEmail] = useState(''); // State to track email input
+  const [password, setPassword] = useState(''); // State to track password input
+  const navigate = useNavigate(); // Initialize useNavigate for navigation
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // Add logic for student authentication here, e.g., API call for validation
+    // Add authentication logic here (API or validation)
     console.log('Student Logged In:', { email, password });
 
-    // Navigate to the StudentDashboard page after successful login
+    // Navigate to the student dashboard after successful login
     navigate('/student-dashboard');
   };
 
@@ -45,14 +44,9 @@ const StudentLogin = () => {
             required
           />
         </div>
-
-        <Link to="/student-dashboard"> {/* Updated link to point to StudentLogin page */}
         <button type="submit" className="login-button">
           Login
         </button>
-        </Link>
-
-        
       </form>
     </div>
   );
