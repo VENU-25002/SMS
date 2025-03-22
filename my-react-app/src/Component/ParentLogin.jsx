@@ -1,54 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom'; // Import the useNavigate hook
-import './ParentLogin.css'; // CSS file for styling
+import './ParentPortal.css'; // Import the CSS file for styling
 
 const ParentLogin = () => {
-  const [email, setEmail] = useState(''); // Track email input
-  const [password, setPassword] = useState(''); // Track password input
   const navigate = useNavigate(); // Initialize useNavigate for navigation
 
-  const handleLogin = (e) => {
-    e.preventDefault();
-
-    // Mock authentication for demonstration (replace with API logic)
-    if (email === 'parent@example.com' && password === 'parent123') {
-      console.log('Parent Logged In:', { email });
-      navigate('/parent-portal'); // Navigate to parent portal
-    } else {
-      alert('Invalid credentials. Please try again.');
-    }
+  const handleAccessPortal = () => {
+    // Navigate to the parent dashboard
+    navigate('/parent-portal');
   };
 
   return (
-    <div className="parent-login-container">
-      <h1>Parent Login</h1>
-      <form className="login-form" onSubmit={handleLogin}>
-        <div className="form-group">
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Enter your email"
-            required
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="password">Password:</label>
-          <input
-            type="password"
-            id="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            placeholder="Enter your password"
-            required
-          />
-        </div>
-        <button type="submit" className="login-button">
-          Login
-        </button>
-      </form>
+    <div className="parent-portal-container">
+      <h1>Welcome to the Parent Login</h1>
+      <p>Access the Parent Portal to view your child's progress and updates.</p>
+      <button className="access-portal-button" onClick={handleAccessPortal}>
+        Login to Parent Portal
+      </button>
     </div>
   );
 };

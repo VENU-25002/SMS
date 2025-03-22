@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './Navbar'; // Import the Navbar component
+import Navbar from './UserInterfaceNavbar'; // Import the Navbar component
 import ChatBot from './ChatBot'; // Import the ChatBot component (kept specifically here for Home page)
 import './Home.css'; // Import the CSS for styling
 

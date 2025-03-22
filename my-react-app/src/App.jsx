@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Component/Home";
 import StudentDashboard from "./Component/StudentDashboard";
-import Navbar from "./Component/Navbar";
+import Navbar from "./Component/UserInterfaceNavbar";
 import ChooseUser from "./Component/ChooseUser";
 import StudentLogin from "./Component/StudentLogin";
 import TeacherLogin from "./Component/TeacherLogin"; // Import TeacherLogin
@@ -12,6 +12,7 @@ import ParentLogin from "./Component/ParentLogin"; // Import ParentLogin
 import ParentPortal from "./Component/ParentPortal"; // Import ParentPortal
 import AdminLogin from "./Component/AdminLogin"; // Import AdminLogin
 import SignUpPage from "./Component/SignUpPage"; // Import SignUpPage
+import ForgotPassword from "./Component/ForgotPassword"; // Import ForgotPassword
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path="/teacher-dashboard" element={<TeacherDashboard />} /> {/* Route for Teacher Dashboard */}
         <Route path="/admin-dashboard" element={<AdminDashboard />} /> {/* Route for Admin Dashboard */}
         <Route path="/admin-login" element={<AdminLogin />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} /> 
 
         {/* New Routes for Parent Portal */}
         <Route path="/parent-login" element={<ParentLogin />} /> {/* Parent Login */}

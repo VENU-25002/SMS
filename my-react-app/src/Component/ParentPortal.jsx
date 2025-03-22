@@ -1,11 +1,11 @@
 import React from 'react';
 import './ParentPortal.css'; // CSS file for styling
 
-const ParentPortal = () => {
+const ParentPortalDashboard = () => {
   return (
     <div className="parent-portal">
       <header className="portal-header">
-        <h1>Parent Portal</h1>
+        <h1>Parent Portal Dashboard</h1>
       </header>
 
       <div className="portal-content">
@@ -38,4 +38,4 @@ const ParentPortal = () => {
   );
 };
 
-export default ParentPortal;
+export default ParentPortalDashboard;
